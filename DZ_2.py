@@ -178,7 +178,18 @@ def check_win():
                 symbols.append(field[i + x][y+4 - i])
                 if symbols == ['X', 'X', 'X', 'X', 'X'] or symbols == ['O', 'O', 'O', 'O', 'O']:
                     return True
-
+#---------
+    for c in range(1,6):
+        symbols = []
+        for i in range(5):
+            symbols.append(field[i + c][9 - i])
+            if symbols == ['X', 'X', 'X', 'X', 'X'] or symbols == ['O', 'O', 'O', 'O', 'O']:
+                return True
+        symbols = []
+        for i in range(5):
+            symbols.append(field[i + c][9 - i])
+            if symbols == ['X', 'X', 'X', 'X', 'X'] or symbols == ['O', 'O', 'O', 'O', 'O']:
+                return True
     for x in range(6):
         for y in range(5):
             symbols = []
